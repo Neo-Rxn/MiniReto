@@ -8,5 +8,6 @@ page changes accordingly to the selected hotels.
 So the name of the hotel, location an description gets updated on click over
 the image.
 <br>
-Other feature required by the challenge, is to hide the nav bar when the user 
+Other feature required by the challenge, is to hide/show the nav bar when the user 
 click over it
+![web site](./minichallenge.jpg)

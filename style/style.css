@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+body{
+    width: 1000px;
+    height: 1600px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.header{
+    width: 100%;
+}
+.main{
+    width:100%;
+    display: flex;
+    height: 57%;
+    border: 1px solid black;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#feature{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+#hero{
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    width: 100%;
+    height: 33%;
+}
+
+
+#rating{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+}
+
+.left{
+    display: flex;
+    margin : 0px 0px;
+    border: 1px solid black;
+}
+
+.right{
+    display: flex;
+    margin : 10px 0px;
+    border: 1px solid black;
+}
+
+#rating__votes{
+    font-size: 30px;
+    height: auto;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #F42C5A;
+    color: white;
+}
+
+#rating__votes > p {
+    font-size: 12px;
+}
+#description{
+    width: 100%;
+    height: 57%;
+    display: flex;
+    flex-direction: row;
+}
+#caracteristicas{
+    display: flex;
+    width: 50%;
+    margin: 10%;
+}
+#testimonios{
+    display: flex;
+    width: 30%; 
+    margin: 10%;
+}
+
+
+
+.footer{
+    width: 100%;
+}

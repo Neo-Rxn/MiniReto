@@ -9,7 +9,8 @@ export const hotelsData = [
       rooms: 11,
       city: "Buenos Aires",
       country: "Argentina",
-      price: 30
+      price: 30,
+      features :"Cerca a la playa, wifi gratis",
     },
     {
       slug: "sainte-jeanne",

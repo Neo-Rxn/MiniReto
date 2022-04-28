@@ -10,4 +10,6 @@ the image.
 <br>
 Other feature required by the challenge, is to hide/show the nav bar when the user 
 click over it
+<br>
+<br>
 ![web site](./minichallenge.jpg)

@@ -7,16 +7,11 @@ const rating = document.getElementById("rating__name");
 const location = document.getElementById("rating__location");
 const characteristics = document.getElementById("characteristics");
 
-
-
-
 let idCounter = 0;
-
 
 //Función para imprimir los hoteles
   function showImages() {
-  hotelsData.forEach((element) => {
-    
+  hotelsData.forEach((element) => {    
     idCounter++
     //console.log(element.name);
     const hotelImage = document.createElement("img");
@@ -53,3 +48,41 @@ function searchHotels(obj) {
 showImages();
 
 //console.log(hotelsData);
+//mafe:
+
+let nav = document.querySelector(".nav");
+let btnMenu = document.querySelector("#img_menu");
+
+let menu = document.querySelector("#menu");
+let hotel = document.querySelector("#hotel");
+let flight = document.querySelector("#flight");
+let car = document.querySelector("#car");
+let tours = document.querySelector("#tours");
+
+let imgMenu = document.querySelector("#img_menu");
+let imgHotel = document.querySelector("#img_hotel");
+let imgFlight = document.querySelector("#img_flight");
+let imgCar = document.querySelector("#img_car");
+let imgTours = document.querySelector("#img_tours");
+
+/*Le agrega a la clase la palabra active, cuando se le agrega en el css le doy nuevos atributos */
+btnMenu.onclick = function(){
+    nav.classList.toggle("active");
+/*Llamo por los id de cada titulo para que a la clase se le agregue la palabra active: nav_link.active*/
+    menu.classList.toggle("active");
+    hotel.classList.toggle("active");
+    flight.classList.toggle("active");
+    car.classList.toggle("active");
+    tours.classList.toggle("active");
+/*Para centrar los íconos: .list_image.active*/
+    imgMenu.classList.toggle("active");
+    imgHotel.classList.toggle("active");
+    imgFlight.classList.toggle("active");
+    imgCar.classList.toggle("active");
+    imgTours.classList.toggle("active");
+
+
+
+
+}
+

@@ -95,6 +95,9 @@ body{
     cursor: pointer;
 }
 
+#hero > img{
+    margin-right: 1px;
+}
 
 #rating{
     display: flex;

@@ -13,24 +13,22 @@ let idCounter = 0;
   function showImages() {
   hotelsData.forEach((element) => {    
     idCounter++
-    //console.log(element.name);
     const hotelImage = document.createElement("img");
     hotelImage.setAttribute("src", element.photo);
     hotelImage.setAttribute("alt", element.name);
     hotelImage.setAttribute("id", "id"+idCounter);
     heroImg.appendChild(hotelImage);
     const image = document.getElementById("id"+idCounter);
-    //console.log(image.id);
     image.addEventListener("click", (element) =>searchHotels(element));
   });
 }
 
+//Busqueda de hoteles
 function searchHotels(obj) {
   const result = hotelsData.filter((e) => e.name == obj.originalTarget.alt)
   characteristics.innerHTML = "";
   rating.innerHTML ="";
   location.innerHTML = "";
-  //console.log(result[0].description)
   const hotelDescription = document.createElement("p");
   const hotelName = document.createElement("p");
   const hotelLocation = document.createElement("p");
@@ -39,15 +37,13 @@ function searchHotels(obj) {
   hotelLocation.innerText = result[0].city +', ' + result[0].country ;
   characteristics.appendChild(hotelDescription);
   rating.appendChild(hotelName);
-  location.appendChild(hotelLocation);
-  //console.log(result.description[0]); 
+  location.appendChild(hotelLocation); 
 }
 
 
 // Llamado de la función Imprimir Hoteles
 showImages();
 
-//console.log(hotelsData);
 //mafe:
 
 let nav = document.querySelector(".nav");
@@ -68,21 +64,19 @@ let imgTours = document.querySelector("#img_tours");
 /*Le agrega a la clase la palabra active, cuando se le agrega en el css le doy nuevos atributos */
 btnMenu.onclick = function(){
     nav.classList.toggle("active");
+
 /*Llamo por los id de cada titulo para que a la clase se le agregue la palabra active: nav_link.active*/
     menu.classList.toggle("active");
     hotel.classList.toggle("active");
     flight.classList.toggle("active");
     car.classList.toggle("active");
     tours.classList.toggle("active");
+
 /*Para centrar los íconos: .list_image.active*/
     imgMenu.classList.toggle("active");
     imgHotel.classList.toggle("active");
     imgFlight.classList.toggle("active");
     imgCar.classList.toggle("active");
     imgTours.classList.toggle("active");
-
-
-
-
 }
 

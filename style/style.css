@@ -7,26 +7,76 @@
 }
 
 body{
-    width: 900px;
+    width: 980px;
     height: 1080px;
     background-color: white;
-   /* border: 1px solid black;*/
 }
 
 .header{
     width: 100%;
 }
+
+.header__container {
+    width: 113%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  .header__logo {
+    width: 33.3%;
+    margin-top: 2%;
+    margin-left: 1%;
+    align-content: left;
+  }
+  
+  .header__lup {
+    width: 33.3%;
+    align-items: left;
+    margin-top: 2%;
+  }
+  
+  .inputheader {
+    margin-left: 2%;
+    border: none;
+    border-radius: 15px;
+    background-color: #e6e6e6;
+    font-size: 14px;
+    height: 30px;
+    width: 300px;
+    color: #636363;
+  }
+  
+  .lupheader {
+    width: 13px;
+    height: 13px;
+    margin-left: -30px;
+  }
+  
+  .header__icon {
+    width: 33.3%;
+    display: flex;
+    justify-content: right;
+    margin-right: 1%;
+  }
+  
+  .iconheader {
+    object-fit: contain;
+    width: 50%;
+  }
+
 .main{
     width:100%;
     display: flex;
     height: 100%;
-    /*border: 1px solid black;*/
 }
 .nav{
     width: 100%;
+    height: 87%;
+    margin: 0;
     display: flex;
     background-color: white;
-    border: 1px solid black;
 }
 
 #feature{
@@ -34,7 +84,6 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
 }
 
 #hero{
@@ -42,7 +91,7 @@ body{
     overflow-x: scroll;
     scrollbar-width: thin;
     width: 100%;
-    height: 25%;
+    height: 22%;
     cursor: pointer;
 }
 
@@ -54,21 +103,17 @@ body{
     height: 4%; 
 }
 
-
 .left{
     display: flex;
     margin-left: 30px;
     align-items: center;
-    /*border: 1px solid black;*/
 }
 
 .right{
     display: flex;
     align-items: center;
     margin : 0px 0px;
-    /*border: 1px solid black;*/
 }
-
 
 #rating__votes{
     font-size: 24px;
@@ -90,13 +135,11 @@ body{
     font-size: 24px ;
     font-weight: 100;
     color: #2D2D2D;
-    /*border: 1px solid black;*/
 }
 #rating__stars{
     display: block;
     color: #F42C5A;
     margin-left: 20px;
-    /*border: 1px solid black;*/
 }
 #rating__map{
     margin-right: 5px;
@@ -112,8 +155,6 @@ body{
 #description{
     display: flex;
     width: 100%;
-    /*margin-top: 20px;*/
-    /*margin-left: 20px;*/
     height: 40%;
     background: #eee;
     overflow: hidden;
@@ -126,7 +167,6 @@ body{
     margin-top: 30px;
     margin-bottom: 20px;
     padding: 30px;
-    /*border: 1px solid black;*/
     background-color: white;
     box-shadow: rgb(16 0 79 / 12%) 0px 2px 8px 0px;
 }
@@ -135,20 +175,6 @@ body{
     display: flex;
     margin-top: 40px;
 }
-
-
-/*#characteristics{
-    width: 50%;
-    margin-left: 40px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    padding: 30px;
-    border: 1px solid black;
-    background-color: white;
-    box-shadow: rgb(16 0 79 / 12%) 0px 2px 8px 0px;
-}*/
-
-
 
 #reviews{
     display: flex;
@@ -159,11 +185,9 @@ body{
     margin-left: 50px;
     margin-bottom: 134px;
     padding: 30px;
-    /*border: 1px solid black;*/
     background-color: white;
     box-shadow: rgb(16 0 79 / 12%) 0px 2px 8px 0px;
 }
-
 
 .reviews__user{
     width: 100%;
@@ -175,9 +199,6 @@ body{
 .reviews__user--image{
     margin-top:30px;
     width: 40px;
-    
-    
-
 }
 
 .reviews__user--image > img{
@@ -191,7 +212,6 @@ body{
     margin-right: 0px;
     width: 50%;
     font-size: 12px;
-    
 }
 
 .reviews__user--name > p{
@@ -207,19 +227,12 @@ body{
     text-align: right;
     color:#F42C5A;
 }
-.footer{
-    width: 100%;
-    height: 200px;
-    border: 1px solid black;
-}
 
 /*_____________________________________________________________________*/
 
 
 .nav{
     width: 30%;
-    border: 1px solid black;
-
 }
 .nav_link{
     color: #F8F8F8;
@@ -230,8 +243,8 @@ body{
 /*PARA OCULTAR LOS TITULOS DEL NAV BAR CUANDO SE ENCOJE*/
 .nav_link.active{
     display: none;
-
 }
+
 /*CAMBIA DE COLOR EL FONDO DE CADA TITULO AL PASAR EL CURSOR ENCIMA*/
 .list_button:hover{
     background-color: #F42C5A;
@@ -256,7 +269,6 @@ body{
     list-style: none;
     width: 100%;
     text-align: center;
-
 }
 
 .list_button{
@@ -275,9 +287,14 @@ body{
 }
 
 .footer {
+    width: 100%;
     display: flex;
+    margin-top: 20px;
+    padding-bottom: 20px;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+    background: #eee;
   }
   
   .footer__img {

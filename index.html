@@ -14,44 +14,52 @@
 
 <body>
     <!---------------------------------------- header-------------------------------------------------------- -->
-    <header class="header">
+    <header>
+        <div id="header__container" class="header__container">
+            <div class="header__logo">
+                <img class="logoheader" src="./resources/images/logo.png" alt="logo" />
+            </div>
+            <div class="header__lup">
+                <input class="inputheader" type="text" alt="Search Hotels" size="30" height="30px"
+                    placeholder="Search Hotels" />
+                <img class="lupheader" src="./resources/images/lup.png" alt="lupa" />
+            </div>
+            <div class="header__icon">
+                <img class="iconheader" src="./resources/images/iconos.png" alt="" />
+            </div>
+        </div>
     </header>
     <!----------------------------------------Main: navbar,feature,footer--------------------------------------------- -->
     <main class="main">
+        
         <!----------------------------------------NavBar:Dinámica---------------------------------------- -->
         <!----------------------------------------NavBar:Dinámica---------------------------------------- -->
         <nav class="nav">
             <ul class="list">
-
-
                 <li class="list_item">
                     <div class="list_button">
                         <img src="style/assets/menu.svg" alt="icono_menu" class="list_image" id="img_menu">
                         <a href="#" class="nav_link" id="menu">MENU</a>
                     </div>
                 </li>
-
                 <li class="list_item">
                     <div class="list_button">
                         <img src="style/assets/hotel.svg" alt="icono_hotel" class="list_image" id="img_hotel">
                         <a href="#" class="nav_link" id="hotel">HOTEL</a>
                     </div>
                 </li>
-
                 <li class="list_item">
                     <div class="list_button">
                         <img src="style/assets/plane.svg" alt="icono_flight" class="list_image" id="img_flight">
                         <a href="#" class="nav_link" id="flight">FLIGHT</a>
                     </div>
                 </li>
-
                 <li class="list_item">
                     <div class="list_button">
                         <img src="style/assets/key.svg" alt="icono_key" class="list_image" id="img_car">
                         <a href="#" class="nav_link" id="car">CAR RENTAL</a>
                     </div>
                 </li>
-
                 <li class="list_item">
                     <div class="list_button">
                         <img src="style/assets/map.svg" alt="icono_map" class="list_image" id="img_tours">
@@ -59,16 +67,14 @@
                     </div>
                 </li>
             </ul>
-
         </nav>
 
         <!-- contiene la descripción, hero y testimonios -->
         <section id="feature">
             <!-- imáneges de hoteles -->
             <section id="hero">
-
-
             </section>
+
             <!-- Dónde se califica cada hotel con las estrellas -->
             <section id="rating">
                 <div class="left">
@@ -80,23 +86,18 @@
                         <span><i class="fas fa-star"></i></span>
                         <span><i class="fas fa-star"></i></span></p>
                     </div>
-
                 </div>
                 <div class="right">
                     <div id="rating__map">
                         <p></p><span><i class="fas fa-map-marker-alt"></i></span>
-
                     </div>
                     <div id="rating__location">
-
                     </div>
                     <div id="rating__votes">
                         <h1>8.6</h1>
                         <p>429 Votes</p>
                     </div>
-
                 </div>
-
             </section>
             <!-- Descripción del hotel: contiene a características y las reseñas -->
             <section id="description">
@@ -104,31 +105,29 @@
                 <!--caracteristicas de cada hotel-->
                 <section class="basic_description">
                     <div id="characteristics">
-
                     </div>
                     <div class="facilities">
                         <div class="facilities__left">
-                           <p><span><i class="fas fa-wifi"> </i></span> Wi-Fi Gratis </p> 
-                           <br>
-                           <p><span><i class="fas fa-parking"></i></span> Parqueadero </p> 
-                           <br>
-                           <p><span><i class="fas fa-utensils"></i></span> Restaurante </p>
-                           <br>
-                           <p><span><i class="fas fa-spa"></i></span> Spa </p>
-                            
+                            <p><span><i class="fas fa-wifi"> </i></span> Wi-Fi Gratis </p>
+                            <br>
+                            <p><span><i class="fas fa-parking"></i></span> Parqueadero </p>
+                            <br>
+                            <p><span><i class="fas fa-utensils"></i></span> Restaurante </p>
+                            <br>
+                            <p><span><i class="fas fa-spa"></i></span> Spa </p>
                         </div>
                         <div class="facilities__right">
-                           <p><span><i class="fas fa-swimming-pool"></i></span> Piscina</p> 
-                           <br>
-                           <p><span><i class="fas fa-glass-cheers"></i></span> Bar</p> 
-                           <br>
-                           <p><span><i class="fas fa-paw"></i></span> Mascotas Permitidas </p>
-                           <br>
-                           <p><span><i class="fas fa-wind"></i></span> Wi-Fi Gratis </p>
+                            <p><span><i class="fas fa-swimming-pool"></i></span> Piscina</p>
+                            <br>
+                            <p><span><i class="fas fa-glass-cheers"></i></span> Bar</p>
+                            <br>
+                            <p><span><i class="fas fa-paw"></i></span> Mascotas Permitidas </p>
+                            <br>
+                            <p><span><i class="fas fa-wind"></i></span> Wi-Fi Gratis </p>
                         </div>
                     </div>
                 </section>
-                
+
                 <!-- Reseñas de usuarios -->
                 <section id="reviews">
                     <div class="card">
@@ -146,28 +145,22 @@
                         </div>
                         <div class="reviews__user--rating">7.8</div>
                     </div>
-
                 </section>
-
             </section>
 
-
             <footer class="footer">
-                <img class="footer__img" src="./src/resources/img/logo.png" alt="logo" />
+                <img class="footer__img" src="./resources/images/logo.png" alt="logo" />
                 <h1 class="footer__h1">MINI RETO - EQUIPO 1</h1>
                 <p class="footer__p">
-                    <br />Juan Guillermo <br />Mafe <br />William <br />Jose Luis
+                    <span> Mafe <span><i class="fas fa-crown"></i></span>, William, Jose Luis Juan, Guillermo</span>
                 </p>
                 <p class="footer__copy">
                     <br />Copyright © 2022 Desarrolladores Profesionales
                 </p>
             </footer>
         </section>
-
         </section>
-
         <!--------------------------- Footer-------------------------------------------------------------------------------->
-
     </main>
     <script type="module" src="./index.js">
 

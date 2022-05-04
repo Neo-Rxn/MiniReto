@@ -9,20 +9,6 @@ const characteristics = document.getElementById("characteristics");
 
 let idCounter = 0;
 
-//Función para imprimir los hoteles
-  function showImages() {
-  hotelsData.forEach((element) => {    
-    idCounter++
-    const hotelImage = document.createElement("img");
-    hotelImage.setAttribute("src", element.photo);
-    hotelImage.setAttribute("alt", element.name);
-    hotelImage.setAttribute("id", "id"+idCounter);
-    heroImg.appendChild(hotelImage);
-    const image = document.getElementById("id"+idCounter);
-    image.addEventListener("click", (element) =>searchHotels(element));
-  });
-}
-
 //Busqueda de hoteles
 function searchHotels(obj) {
   const result = hotelsData.filter((e) => e.name == obj.originalTarget.alt)
@@ -40,8 +26,22 @@ function searchHotels(obj) {
   location.appendChild(hotelLocation); 
 }
 
+//Función para imprimir los hoteles
+  function showImages() {
+  hotelsData.forEach((element) => {    
+    idCounter++
+    const hotelImage = document.createElement("img");
+    hotelImage.setAttribute("src", element.photo);
+    hotelImage.setAttribute("alt", element.name);
+    hotelImage.setAttribute("id", "id"+idCounter);
+    heroImg.appendChild(hotelImage);
+    const image = document.getElementById("id"+idCounter);
+    image.addEventListener("click", (img) =>searchHotels(img));
+  });
+}
 
-// Llamado de la función Imprimir Hoteles
+
+// Llamado de la función que muestra las imagenes de los hoteles
 showImages();
 
 //mafe:
